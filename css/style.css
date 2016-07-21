@@ -560,7 +560,7 @@ body{
   height: 2.3rem;
   position: relative;
   left: 50%;
-  margin-left: -6.2rem;
+  margin-left: -6.1rem;
 }
 
 .companyPage .row .company{
@@ -570,6 +570,8 @@ body{
   float: left;
 
 }
+
+
 
 @keyframes rotateFounder{
   from{
@@ -596,14 +598,14 @@ body{
 
 
 .aboutusPage .title{
-  /*color:#FF1177;*/
-  color: white;
+  color:#FF1177;
+  /*color: white;*/
   font-size: 0.55rem;
   line-height: 0.5rem;
   font-weight: bold;
   text-align: center;
-  /*animation: neon-red 1.5s ease-in-out infinite alternate;*/
-  margin-bottom: 0.2rem;
+  animation: neon-red 1.5s ease-in-out infinite alternate;
+  margin-bottom: 1rem;
 }
 
 /*glow*/
@@ -636,11 +638,125 @@ body{
   left: 50%;
   margin-left: -6rem;
   border:1px solid #ffffff;border-radius:0.08rem;font-size:0.2rem;color:white;line-height:0.3rem;padding:0.4rem 0.33rem;
+  margin-bottom: 2.5rem;
 }
 
 .aboutusPage .curtain{
-  
+  background-color: #2a2a2a;
+  width: 100%;
+  /*height: 5rem;*/
+  height: 2.5rem;
+  position: absolute;
+  bottom: 0;
+  padding-top: 1rem;
 }
+
+.curtain .container{
+  width: 12rem;
+  position: relative;
+  margin-left: -6rem;
+  left: 50%; 
+}
+
+.curtain .left{
+  width: 4rem;
+  float: left;
+}
+
+  .curtain .left .row{
+    font-size:0.15rem;
+    line-height: 0.27rem;
+  }
+
+  .curtain .left .row img{
+    display: block;
+    float: left;
+    width:0.24rem;height:0.24rem;margin-right:0.05rem;
+  }
+
+  .curtain .left .row .text{
+    float: left;
+  }
+
+.curtain .center{
+  width: 2rem;
+  float: left;
+}
+
+  .curtain .center .row{
+    font-size:0.15rem;
+    line-height: 0.27rem;
+  }
+
+  .curtain .center .row img{
+    display: block;
+    float: left;
+    width:0.24rem;height:0.24rem;margin-right:0.05rem;
+  }
+
+  .curtain .center .row .text{
+    float: left;
+  }
+
+.curtain .right{
+  float: right;
+  position: relative;
+  top: -0.4rem;
+}
+
+  .curtain .right .qrcode{
+    float: right;
+  }
+
+  .curtain .right .qrcode{
+    text-align: center;
+    width: 1.25rem; 
+  }
+
+  .curtain .right .qrcode img{
+    width:1.25rem;height:1.23rem;display:inline-block;
+  }
+
+  .curtain .right .qrcode .text{
+    font-size:0.15rem;line-height:0.3rem;
+    position: relative;
+    top: -0.4rem;
+  }
+
+/*.curtain .text {
+  position:relative;
+  text-align: center;
+}
+.curtain .text:after {
+  content: '';
+  position:absolute;
+  display:block;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  background: -moz-linear-gradient(top,  rgba(39,39,39,1) 0%, rgba(39,39,39,0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(39,39,39,1)), color-stop(100%,rgba(39,39,39,0)));
+  background: -webkit-linear-gradient(top,  rgba(39,39,39,1) 0%,rgba(39,39,39,0) 100%);
+  background: -o-linear-gradient(top,  rgba(39,39,39,1) 0%,rgba(39,39,39,0) 100%);
+  background: -ms-linear-gradient(top,  rgba(39,39,39,1) 0%,rgba(39,39,39,0) 100%);
+  background: linear-gradient(to bottom,  rgba(39,39,39,1) 0%,rgba(39,39,39,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#272727', endColorstr='#00272727',GradientType=0 );
+}
+.text span {
+  text-shadow: 
+    0 -1px 0 #858585,
+    0 1px 10px rgba(0,0,0,.6),
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.2),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 7px 10px rgba(0,0,0,.25),
+    0 15px 10px rgba(0,0,0,.2),
+    0 25px 15px rgba(0,0,0,.15);
+}*/
+
+
 
 @media only screen and (max-width: 1440px) {
   html{font-size: 90px;}
