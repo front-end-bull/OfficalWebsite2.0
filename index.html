@@ -27,7 +27,8 @@
 <script src="resource/js/require.js" data-main="resource/js/main.js" defer async="true"></script>
 </head>
 <body onload="rain()">
-
+  <img alt="rainyday" id="rainyday" style="position:absolute;top:0;z-index:-1;visibility:hidden;width:100%;height:100%;">
+  
   <div class="sy-box" id="background">
     <div class="sy-slides-wrap">
       <div class="sy-slides-crop">
@@ -224,7 +225,6 @@
     </div>
     <div class="section companyPage">
       <div class="title">合作机构</div>
-      <img alt="rainyday" id="rainyday" style="position:absolute;top:0;z-index:-1;visibility:hidden;width:100%;height:100%;">
       <div class="row" style="margin-top:1rem;">
         <img src="resource/img/zhongguorenshou.png" class="company">
         <img src="resource/img/zhongguopingan.png" class="company">
@@ -365,7 +365,48 @@
               $background.hide()
             }
           },
-          afterLoad: function(anchorLink, index){},
+          afterLoad: function(anchorLink, index){
+            var loadedSection = $(this);
+            //using index
+
+            if(index == 2){
+              $('.funcPage .container').addClass('keepGoing')
+              $('.funcPage .title').addClass('neon-blue')
+            }else{
+              $('.funcPage .container').removeClass('keepGoing')
+              $('.funcPage .title').removeClass('neon-blue')
+            }
+
+            if(index == 3){
+              $('.problemPage .title').addClass('neon-purple')
+            }else{
+              $('.problemPage .title').removeClass('neon-purple')
+            }
+
+            if(index == 4){
+              $('.teamPage .title').addClass('neon-yellow')
+            }else{
+              $('.teamPage .title').removeClass('neon-yellow')
+            }
+
+            if(index == 5){
+              $('.companyPage .title').addClass('neon-green')
+            }else{
+              $('.companyPage .title').removeClass('neon-green')
+            }
+
+
+            if(index == 6){
+              $('.aboutusPage .title').addClass('neon-red')
+            }else{
+              $('.aboutusPage .title').removeClass('neon-red')
+            }
+
+            //using anchorLink
+            // if(anchorLink == 'secondSlide'){
+            //     alert("Section 2 ended loading");
+            // }
+          },
           afterRender: function(){},
           afterResize: function(){},
           afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},

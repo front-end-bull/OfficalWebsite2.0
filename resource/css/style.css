@@ -96,9 +96,10 @@ body{
   font-size:0.5rem;
   font-weight: bold;
   float: left;  
-  animation: rotate 2.5s ease-in-out alternate infinite;
   transform-origin: 20% center;
+  animation: rotate 2.5s ease-in-out alternate infinite;
 }
+
 
 .homePage .big:before {
   content: attr(data-shadow);
@@ -159,16 +160,6 @@ body{
 
 @keyframes neon-blue{
   from {
-    text-shadow: 0 0 10px #fff,
-               0 0 20px  #fff,
-               0 0 30px  #fff,
-               0 0 40px  #228DFF,
-               0 0 70px  #228DFF,
-               0 0 80px  #228DFF,
-               0 0 100px #228DFF,
-               0 0 150px #228DFF;
-  }
-  to {
     text-shadow: 0 0 1px #fff,
                0 0 2px #fff,
                0 0 3px #fff,
@@ -177,6 +168,16 @@ body{
                0 0 8px #228DFF,
                0 0 10px #228DFF,
                0 0 15px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #228DFF,
+               0 0 70px  #228DFF,
+               0 0 80px  #228DFF,
+               0 0 100px #228DFF,
+               0 0 150px #228DFF;
   }
 }
 
@@ -190,8 +191,11 @@ body{
   line-height: 0.5rem;
   font-weight: bold;
   text-align: center;
-  animation: neon-blue 1.5s ease-in-out infinite alternate;
   margin-bottom: 0.2rem;
+}
+
+.neon-blue{
+  animation: neon-blue 1.5s ease-in-out infinite alternate 1s;
 }
 
 
@@ -227,6 +231,9 @@ body{
   margin-left: -1rem;
   margin-top: -1.5rem;
   border:none;
+}
+
+.keepGoing{
   animation: keepGoing 60s linear infinite;
 }
 
@@ -290,20 +297,14 @@ body{
   line-height: 0.5rem;
   font-weight: bold;
   text-align: center;
-  animation: neon-purple 1.5s ease-in-out infinite alternate;
 }
+
+.neon-purple{
+  animation: neon-purple 1.5s ease-in-out infinite alternate 1s;
+}
+
 @keyframes neon-purple {
   from {
-    text-shadow: 0 0 10px #fff,
-               0 0 20px  #fff,
-               0 0 30px  #fff,
-               0 0 40px  #FF9900,
-               0 0 70px  #FF9900,
-               0 0 80px  #FF9900,
-               0 0 100px #FF9900,
-               0 0 150px #FF9900;
-  }
-  to {
     text-shadow: 0 0 5px #fff,
                0 0 10px #fff,
                0 0 15px #fff,
@@ -313,6 +314,17 @@ body{
                0 0 50px #FF9900,
                0 0 75px #FF9900;
   }
+  to {
+    text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #FF9900,
+               0 0 70px  #FF9900,
+               0 0 80px  #FF9900,
+               0 0 100px #FF9900,
+               0 0 150px #FF9900;
+  }
+  
 }
 
 
@@ -445,10 +457,13 @@ body{
   line-height: 0.5rem;
   font-weight: bold;
   text-align: center;
-  animation: neon-yellow 1.5s ease-in-out infinite alternate;
 }
+.neon-yellow{
+  animation: neon-yellow 1.5s ease-in-out infinite alternate 1s;
+}
+
 @keyframes neon-yellow {
-  from {
+  to {
     text-shadow: 0 0 5px #fff,
                0 0 10px  #fff,
                0 0 15px  #fff,
@@ -458,7 +473,7 @@ body{
                0 0 50px #FFDD1B,
                0 0 65px #FFDD1B;
   }
-  to {
+  from {
     text-shadow: 0 0 1px #fff,
                0 0 2px #fff,
                0 0 3px #fff,
@@ -515,7 +530,7 @@ body{
 }
 
 @keyframes neon-green {
-  from {
+  to {
     text-shadow: 0 0 10px #fff,
                0 0 20px  #fff,
                0 0 30px  #fff,
@@ -525,7 +540,7 @@ body{
                0 0 100px #B6FF00,
                0 0 150px #B6FF00;
   }
-  to {
+  from {
     text-shadow: 0 0 1px #fff,
                0 0 2px #fff,
                0 0 3px #fff,
@@ -546,10 +561,12 @@ body{
   line-height: 0.5rem;
   font-weight: bold;
   text-align: center;
-  animation: neon-green 1.5s ease-in-out infinite alternate;
   margin-bottom: 0.2rem;
 }
 
+.neon-green{
+  animation: neon-green 1.5s ease-in-out infinite alternate 1s;
+}
 
 .companyPage .row{
   width: 12.4rem;
@@ -600,13 +617,16 @@ body{
   line-height: 0.5rem;
   font-weight: bold;
   text-align: center;
-  animation: neon-red 1.5s ease-in-out infinite alternate;
   margin-bottom: 1rem;
+}
+
+.neon-red{
+  animation: neon-red 1.5s ease-in-out infinite alternate 1s;
 }
 
 /*glow*/
 @keyframes neon-red {
-  from {
+  to {
     text-shadow: 0 0 10px #fff,
                0 0 20px  #fff,
                0 0 30px  #fff,
@@ -616,7 +636,7 @@ body{
                0 0 100px #FF1177,
                0 0 150px #FF1177;
   }
-  to {
+  from {
     text-shadow: 0 0 5px #fff,
                0 0 10px #fff,
                0 0 15px #fff,
